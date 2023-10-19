@@ -7,9 +7,9 @@ const patientSchema=new mongoose.Schema({
     email:String,
     conditions: [
         {
-            name:String, //name of mental condition if any
+            name:String, //name of  condition if any
             age:Number, // age of the patient
-            health_status:String, //what type of mental condtion if patient know it already otherwise added later
+            health_status:String, //what type of  condtion if patient know it already otherwise added later
             id: mongoose.Schema.Types.ObjectId
 
         }
