@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="payment1.css">
+        <h1>Payment Page</h1>
+    <main>
+            <h2>Payment Information</h2>
+            <h3>Total amount to be paid(in rupees):[ ]</h3>
+            <div class="container mt-5">
+                <button type="submit" class="btn btn-primary">Pay Offline</button>
+            </div>
+            <div class="container mt-5">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Credit/Debit Card
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <form class="p-3">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" class="form-control" id="card-number" placeholder="Enter card number">
+                            </div>
+                            <div class="form-group">
+                                <label for="card-holder-name">Cardholder Name</label>
+                                <input type="text" class="form-control" id="card-holder-name" placeholder="Enter cardholder name">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="expiry-date">Expiry Date</label>
+                                    <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit Payment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pay via UPI
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <form class="p-3">
+                            <div class="form-group">
+                                <label for="UPI">UPI ID</label>
+                                <input type="text" class="form-control" id="UPI" placeholder="Enter your UPI ID">
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit Payment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h4>*You get 5% discount if you pay online</h4>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

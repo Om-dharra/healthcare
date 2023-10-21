@@ -66,7 +66,6 @@ b6.addEventListener('click',function()
     {
         s3-=1;
         p3.innerHTML = s3;
-    }
 });
 bt3.addEventListener('click',function()
 {
